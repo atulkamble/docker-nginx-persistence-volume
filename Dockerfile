@@ -1,5 +1,2 @@
-# Use official Nginx image as base
 FROM nginx:latest
-
-# Expose port 80
-EXPOSE 80
+COPY ./data/index.html /usr/share/nginx/html/index.html
