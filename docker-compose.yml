@@ -3,7 +3,7 @@ services:
     build: .
     ports:
       - "80:80"
-    volumes:
+    volumes: myvolume
       - ./data:/usr/share/nginx/html
     container_name: nginx_volume_test
 
